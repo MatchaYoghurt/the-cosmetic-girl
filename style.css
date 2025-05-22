@@ -1,0 +1,42 @@
+
+body {
+  font-family: "Noto Sans TC", "Helvetica", sans-serif;
+  background-color: #fff;
+  color: #333;
+  max-width: 720px;
+  margin: 2em auto;
+  padding: 1em;
+  line-height: 1.7;
+}
+a {
+  color: #567;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+sup[data-fn] {
+  position: relative;
+  cursor: pointer;
+  color: #999;
+  font-size: 0.8em;
+}
+.tooltip {
+  position: absolute;
+  background: #fefefe;
+  border: 1px solid #ccc;
+  padding: 0.6em;
+  max-width: 300px;
+  z-index: 10;
+  top: 1.2em;
+  left: 0;
+  font-size: 0.9em;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  display: none;
+}
+sup[data-fn]:hover .tooltip {
+  display: block;
+}
+.footnote {
+  display: none;
+}
